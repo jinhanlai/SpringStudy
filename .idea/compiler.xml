@@ -10,7 +10,11 @@
         <module name="spring-02-di" />
         <module name="spring-03-autowired" />
         <module name="spring--Ioc" />
+        <module name="spring-04-annotation" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="annotation" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
