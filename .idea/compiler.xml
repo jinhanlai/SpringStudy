@@ -11,6 +11,7 @@
         <module name="spring-03-autowired" />
         <module name="spring--Ioc" />
         <module name="spring-04-annotation" />
+        <module name="spring-05-appconfig" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

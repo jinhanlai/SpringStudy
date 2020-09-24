@@ -18,6 +18,10 @@
 > 使用xml配置更加万能，适用于任何场所；使用注解配置相对简单，但是不是自己类使用不了，维护相对复杂
 > 最佳配合：xml用来配置bean，注解用来配置属性。
 
+@Configuration：纯java的方式实现bean，类似于之前的beans.xml
+@Import：表示导入另外一个配置类
+@Bean: 相当于之前的xml配置文件里面bean标签
+
 ## 2. 博客参考地址
 [SpringIoC博客地址](http://ljh.gold/spring-ioc/)
 ## 参考文献
