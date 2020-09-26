@@ -3,6 +3,8 @@
 02-di 是几种依赖注入的实现方式
 03-autowired讲的是自动注入
 04-annotation讲的是使用注解开发
+05-appconfig 讲的是基于java的配置类实现spring的应用上下文
+06-aop aop实现动态代理的三种方式：spring原生接口，自定义切面，使用注解
 
 
 ## 1. 注解说明

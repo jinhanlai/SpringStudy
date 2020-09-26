@@ -7,11 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-06-aop" />
         <module name="spring-02-di" />
-        <module name="spring-03-autowired" />
-        <module name="spring--Ioc" />
-        <module name="spring-04-annotation" />
         <module name="spring-05-appconfig" />
+        <module name="spring-03-autowired" />
+        <module name="spring-04-annotation" />
+        <module name="spring--Ioc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

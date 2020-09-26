@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--注册bean-->
+    <bean id="usersvice" class="com.ljh.service.UserServiceImple"/>
+    <bean id="befoerlog" class="com.ljh.log.BeforeLog"/>
+
+    <!--第一种方式是原生的spring API 接口-->
+    <!--&lt;!&ndash;配置aop，导入aop的约束&ndash;&gt;-->
+    <!--<aop:config>-->
+    <!--    &lt;!&ndash;需要切入的点  eexpression表达式，execution(执行的位置：* * * * *)  第一个*表示返回的类型，第二个表示包名&ndash;&gt;-->
+    <!--    <aop:pointcut id="pointcut" expression="execution(* com.ljh.service.UserServiceImple.*(..) )"/>-->
+
+    <!--    &lt;!&ndash;执行环绕增加&ndash;&gt;-->
+    <!--    <aop:advisor advice-ref="befoerlog" pointcut-ref="pointcut"/>-->
+
+    <!--</aop:config>-->
+
+    <!--第二种方式，自定义切面-->
+    <!--相对第一种简单，但是功能没有第一种强大-->
+    <!--<bean id="dif" class="com.ljh.log.DivPointCut"/>-->
+    <!--<aop:config>-->
+    <!--    &lt;!&ndash;自定义切面 ref 引入的类&ndash;&gt;-->
+    <!--    <aop:aspect ref="dif">-->
+    <!--        &lt;!&ndash;切入点&ndash;&gt;-->
+    <!--        <aop:pointcut id="pointcut" expression="execution(* com.ljh.service.UserServiceImple.*(..))"/>-->
+
+    <!--        &lt;!&ndash;通知&ndash;&gt;-->
+    <!--        <aop:before method="before" pointcut-ref="pointcut"/>-->
+    <!--        <aop:after method="after" pointcut-ref="pointcut"/>-->
+    <!--    </aop:aspect>-->
+
+    <!--</aop:config>-->
+
+    <!--方式三，使用注解-->
+    <bean id="annotationpointcut" class="com.ljh.log.AnnotationPointCut"/>
+    <!--开启注解支持-->
+    <aop:aspectj-autoproxy/>
+
+
+</beans>
