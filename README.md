@@ -2,10 +2,16 @@
 01-loc 讲的是ioc的使用
 02-di 是几种依赖注入的实现方式
 03-autowired讲的是自动注入
-04-annotation讲的是使用注解开发
-05-appconfig 讲的是基于java的配置类实现spring的应用上下文
-06-aop aop实现动态代理的三种方式：spring原生接口，自定义切面，使用注解
+> 自动注入可以避免繁琐的xml配置，需要在xml文件中注册bean和开启注解的支持
 
+04-annotation讲的是使用注解开发
+> @Componet 相当于在xml容器中注册bean对象 ，但是要在xml文件中添加注解的支持，和扫描注解所在的包
+
+05-appconfig 讲的是基于java的配置类实现spring的应用上下文
+> 纯java代码的方式实现注入；@Configuration相当于bean.xml文件；@Bean就相当于bean标签
+
+06-aop aop实现动态代理的三种方式：spring原生接口，自定义切面，使用注解
+> 三种方式实现面向切面编程
 
 ## 1. 注解说明
 @Autowired： 自动装配类型，名字；如果Autowired不能自动装配上属性，需要配合@Qualifier(value="..")
