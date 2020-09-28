@@ -15,6 +15,10 @@
 
 07-springmybatis 整合springmybatis的两种方式；一种是bean实现sqlsessionfactory；一种是继承SqlSessionDaoSupport类
 
+## 事务
+spring中支持两种事务：声明式事务、编程式事务
+声明式事务：通常使用aop的方式去实现
+编程式事务：在程序中使用trycatch
 
 ## 1. 注解说明
 @Autowired： 自动装配类型，名字；如果Autowired不能自动装配上属性，需要配合@Qualifier(value="..")

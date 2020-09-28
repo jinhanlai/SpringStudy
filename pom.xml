@@ -16,6 +16,7 @@
         <module>spring-05-appconfig</module>
         <module>spring-06-aop</module>
         <module>spring-07-springmybatis</module>
+        <module>spring-08-transaction</module>
     </modules>
 
     <dependencies>
@@ -44,6 +45,14 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
             <scope>test</scope>
+        </dependency>
+        <!--aop导入-->
+        <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.6</version>
+            <scope>runtime</scope>
         </dependency>
 
     </dependencies>
