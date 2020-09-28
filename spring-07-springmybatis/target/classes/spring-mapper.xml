@@ -13,4 +13,8 @@
     <bean id="userMapper" class="com.ljh.impl.UserMapperImpl">
         <property name="sqlSession" ref="sqlSessionTemplateession"/>
     </bean>
+
+    <bean id="userMapperImpl2" class="com.ljh.impl.UserMapperImpl2">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>
 </beans>
