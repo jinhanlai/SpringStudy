@@ -13,6 +13,9 @@
 06-aop aop实现动态代理的三种方式：spring原生接口，自定义切面，使用注解
 > 三种方式实现面向切面编程
 
+07-springmybatis 整合springmybatis的两种方式；一种是bean实现sqlsessionfactory；一种是继承SqlSessionDaoSupport类
+
+
 ## 1. 注解说明
 @Autowired： 自动装配类型，名字；如果Autowired不能自动装配上属性，需要配合@Qualifier(value="..")
 @Resource：通过name，type 自动装配，通过java来实现的
