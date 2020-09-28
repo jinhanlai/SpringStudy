@@ -35,4 +35,14 @@ public class MyTest {
             System.out.println(user);
         }
     }
+
+    @Test
+    public void testSpringMybatis2() throws IOException {
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring-mapper.xml");
+        UserMapper userMapper = context.getBean("userMapperImpl2", UserMapper.class);
+
+        for (User user : userMapper.selectAll()) {
+            System.out.println(user);
+        }
+    }
 }
